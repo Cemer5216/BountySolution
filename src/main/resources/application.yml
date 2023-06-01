@@ -1,0 +1,7 @@
+server:
+  port: 8016
+  servlet:
+    context-path: /hh
+spring :
+  application:
+    name: hh-service
