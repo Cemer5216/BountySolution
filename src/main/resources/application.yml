@@ -1,7 +1,14 @@
-server:
-  port: 8016
-  servlet:
-    context-path: /hh
 spring :
   application:
-    name: hh-service
+    name: Cemer-bountysolution-service # 当前服务的应用名，与nacos中的dataid的前缀匹配
+  cloud:
+    nacos:
+      config:
+        server-addr: http://152.136.194.160:8848/nacos/ # 配置中心地址 nacos server
+        file-extension: yaml # 配置中心的配置后缀
+        namespace: 76fcc230-01ec-45b3-9c6d-03c00fc87e41
+        refresh-enabled: true
+#        username: gmecloudeffect
+#        password: pugeyx
+#  profiles:
+#    active: test # 指定环境为开发环境
